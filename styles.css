@@ -1,6 +1,53 @@
 :root {
     --theme-color: rgb(255, 255, 0);
+    --delay: 0ms;
+    --duration: 6000ms;
+    --dasharray: 1000;
+    --revDasharray: 1000;
+    --path: path('M -86 345 C -87 924 22 299 140 394 C 215 459 242 374 336 419 c 63 -32 159 55 149 -101 C 330 134 411 121 367 48 c -34 -104 -40 37 -78 64 C 266 129 268 163 246 201 c -20 31 -89 19 -105 -21 C 114 112 88 178 50 137 c -26 -25 -68 5 -74.7 69.8 c -7.3 60.2 -64 48.8 -136.3 108.2 z');
 }
+
+
+
+svg {
+    width: 100%;
+}
+
+.path1 {
+    stroke-dasharray: var(--dasharray);
+    stroke-dashoffset: var(--dasharray);
+    animation: draw 6s linear backwards ;
+
+}
+
+.path2 {
+    stroke-dasharray: var(--dasharray);
+    stroke-dashoffset: var(--dasharray);
+    animation: draw 8s linear backwards ;
+
+}
+
+.path3 {
+    stroke-dasharray: var(--dasharray);
+    stroke-dashoffset: var(--dasharray);
+    animation: draw 4s linear backwards ;
+
+}
+
+.path4 {
+    stroke-dasharray: var(--dasharray);
+    stroke-dashoffset: var(--dasharray);
+    animation: draw 7s linear backwards ;
+
+}
+
+
+@keyframes draw {
+    0% {
+      stroke-dashoffset: 130;
+    }
+  }
+
 
 body {
     background-color: rgb(0, 0, 0);
@@ -161,6 +208,14 @@ body {
     margin: -5vw 15vw 0 15vw;
 }
 
+.morebox {
+    display: flex;
+    flex-direction: row;
+    /*background-color: rgb(100, 0, 0);*/
+    height: 1500px;
+    margin: -40vw 15vw 0 15vw;
+}
+
 .titlebox {
     /*background-color: rgb(0, 100, 0);*/
     display: flex;
@@ -219,7 +274,7 @@ font-family: 'Roboto Mono', monospace, sans-serif;
 
     .blob {
         top: -175px;
-   }
+    }
 
     .blob2 {
         top: -100px;
@@ -332,7 +387,7 @@ font-family: 'Roboto Mono', monospace, sans-serif;
 
     .blob {
         top: -175px;
-   }
+    }
 
     .blob2 {
         top: -100px;
@@ -445,7 +500,7 @@ font-family: 'Roboto Mono', monospace, sans-serif;
 
     .blob {
         top: -175px;
-   }
+    }
 
     .blob2 {
         top: -100px;
