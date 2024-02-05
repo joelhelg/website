@@ -23,36 +23,36 @@ body {
     left: 0;
     width: 100%;
     z-index: -1;
-    
-  }
 
-  .blob2 {
+}
+
+.blob2 {
     position: absolute;
 
     top: -75px;
     left: 0;
     width: 100%;
     z-index: -1;
-    
-  }
 
-  .blob3 {
+}
+
+.blob3 {
     position: absolute;
     top: 0px;
     left: 0;
     width: 100%;
     z-index: -1;
-    
-  }
 
-  .blob4 {
+}
+
+.blob4 {
     position: absolute;
     top: 75px;
     left: 0;
     width: 100%;
     z-index: -1;
-    
-  }
+
+}
 
 .spacer {
     height: 0px;
@@ -148,16 +148,32 @@ body {
 .introbox {
     display: flex;
     flex-direction: row;
-    /*background-color: rgb(0, 0, 0);*/
+    /*background-color: rgb(100, 0, 0);*/
     height: 1500px;
     margin: 0 15vw 0 15vw;
 }
 
+.introbox2 {
+    display: flex;
+    flex-direction: row;
+    /*background-color: rgb(100, 0, 0);*/
+    height: 1500px;
+    margin: -5vw 15vw 0 15vw;
+}
+
 .titlebox {
-    /*background-color: rgb(0, 0, 0);*/
+    /*background-color: rgb(0, 100, 0);*/
     display: flex;
     flex-direction: column;
     width: 50%;
+
+}
+
+.titlebox2 {
+    /*background-color: rgb(22, 57, 25);*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
 }
 
@@ -181,6 +197,7 @@ body {
     width: 30vw;
     height: 30vw;
     border-bottom: 5px dashed var(--theme-color);
+    /*background-color: rgb(0, 0, 100)*/
     ;
 }
 
@@ -189,10 +206,34 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace, sans-serif;
 */
 
-@media only screen and (max-width: 1080px) {
+/* @media only screen and (max-width: 1080px) {
+    
+} */
+
+
+@media only screen and (max-device-width: 480px) {
+    /* write smartphone styles here */
     /*  body {
         background-color: blue;
     } */
+
+    .blob {
+        top: -175px;
+   }
+
+    .blob2 {
+        top: -100px;
+
+    }
+
+    .blob3 {
+        top: -25px;
+
+    }
+
+    .blob4 {
+        top: 50px;
+    }
 
     .navbox {
         position: fixed;
@@ -209,6 +250,7 @@ font-family: 'Roboto Mono', monospace, sans-serif;
     .logo {
         height: 0%;
         margin: 0%;
+
     }
 
     .nav {
@@ -242,16 +284,17 @@ font-family: 'Roboto Mono', monospace, sans-serif;
     .introbox {
         display: flex;
         flex-direction: column;
-        background-color: rgb(0, 0, 0);
+        /*background-color: rgb(0, 0, 0);*/
         height: 1500px;
-        margin: 0 3vw 0 3vw;
+        margin: 50vw 3vw 0 3vw;
+
     }
 
     .titlebox {
-        background-color: rgb(0, 0, 0);
+        /*background-color: rgb(0, 0, 0);*/
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
 
     }
 
@@ -275,8 +318,234 @@ font-family: 'Roboto Mono', monospace, sans-serif;
         width: 50vw;
         height: 50vw;
         border-bottom: 5px dashed var(--theme-color);
-        ;
+
         margin-left: auto;
-        margin-top: -50px;
+        margin-top: -350px;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    /* tablets in portrait mode */
+    /*  body {
+        background-color: blue;
+    } */
+
+    .blob {
+        top: -175px;
+   }
+
+    .blob2 {
+        top: -100px;
+
+    }
+
+    .blob3 {
+        top: -25px;
+
+    }
+
+    .blob4 {
+        top: 50px;
+    }
+
+    .navbox {
+        position: fixed;
+        margin: auto;
+        bottom: 0px;
+    }
+
+    .logospace {
+        width: 0%;
+        height: 0%;
+        /* background-color: rgb(59, 59, 59); */
+    }
+
+    .logo {
+        height: 0%;
+        margin: 0%;
+
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    .button {
+        /* box */
+        /* background-color: rgb(39, 39, 39);  */
+        height: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    .button-text {
+        font-size: 12pt;
+
+    }
+
+    .empty-space {
+        height: 70px;
+        width: 100%;
+    }
+
+    .introbox {
+        display: flex;
+        flex-direction: column;
+        /*background-color: rgb(0, 0, 0);*/
+        height: 1500px;
+        margin: 50vw 3vw 0 3vw;
+
+    }
+
+    .titlebox {
+        /*background-color: rgb(0, 0, 0);*/
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .title {
+        font-family: 'Roboto Mono', monospace, sans-serif;
+        font-weight: 100;
+        font-size: 40pt;
+        margin-bottom: 25px;
+    }
+
+    .subtitle {
+        font-family: 'Roboto Mono', monospace, sans-serif;
+        color: var(--theme-color);
+        ;
+        font-weight: 300;
+        margin-top: 0;
+
+    }
+
+    .imagebox {
+        width: 50vw;
+        height: 50vw;
+        border-bottom: 5px dashed var(--theme-color);
+
+        margin-left: auto;
+        margin-top: -350px;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) {
+    /* tablets in landscape mode and smaller/older monitors */
+    /*  body {
+        background-color: blue;
+    } */
+
+    .blob {
+        top: -175px;
+   }
+
+    .blob2 {
+        top: -100px;
+
+    }
+
+    .blob3 {
+        top: -25px;
+
+    }
+
+    .blob4 {
+        top: 50px;
+    }
+
+    .navbox {
+        position: fixed;
+        margin: auto;
+        bottom: 0px;
+    }
+
+    .logospace {
+        width: 0%;
+        height: 0%;
+        /* background-color: rgb(59, 59, 59); */
+    }
+
+    .logo {
+        height: 0%;
+        margin: 0%;
+
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    .button {
+        /* box */
+        /* background-color: rgb(39, 39, 39);  */
+        height: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    .button-text {
+        font-size: 12pt;
+
+    }
+
+    .empty-space {
+        height: 70px;
+        width: 100%;
+    }
+
+    .introbox {
+        display: flex;
+        flex-direction: column;
+        /*background-color: rgb(0, 0, 0);*/
+        height: 1500px;
+        margin: 50vw 3vw 0 3vw;
+
+    }
+
+    .titlebox {
+        /*background-color: rgb(0, 0, 0);*/
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .title {
+        font-family: 'Roboto Mono', monospace, sans-serif;
+        font-weight: 100;
+        font-size: 40pt;
+        margin-bottom: 25px;
+    }
+
+    .subtitle {
+        font-family: 'Roboto Mono', monospace, sans-serif;
+        color: var(--theme-color);
+        ;
+        font-weight: 300;
+        margin-top: 0;
+
+    }
+
+    .imagebox {
+        width: 50vw;
+        height: 50vw;
+        border-bottom: 5px dashed var(--theme-color);
+
+        margin-left: auto;
+        margin-top: -350px;
     }
 }
