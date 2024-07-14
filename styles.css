@@ -1,5 +1,5 @@
 :root {
-    --theme-color: rgb(255, 255, 0);
+    --theme-color: rgb(255, 255, 0); /*rgb(255, 255, 0)*/
     --delay: 0ms;
     --duration: 6000ms;
     --dasharray: 1000;
